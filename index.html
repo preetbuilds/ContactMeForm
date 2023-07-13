@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+      .container {
+        /* background-color: black; */
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      .container h2 {
+        text-align: center;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        font-style: bold;
+        font-size: 20px;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      input[type="submit"]:hover {
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name.." required />
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Your email.." required />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          placeholder="Write something.."
+          style="height: 200px"
+          required
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
